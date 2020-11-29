@@ -15,6 +15,8 @@
 		1BA0B59F2547AC3B000DDBA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA0B59D2547AC3B000DDBA6 /* LaunchScreen.storyboard */; };
 		1BA0B5AA2547AC3B000DDBA6 /* MusicStreamingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0B5A92547AC3B000DDBA6 /* MusicStreamingTests.swift */; };
 		1BA0B5B52547AC3B000DDBA6 /* MusicStreamingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0B5B42547AC3B000DDBA6 /* MusicStreamingUITests.swift */; };
+		1BD992AD257425A200862032 /* VC_songList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD992AC257425A200862032 /* VC_songList.swift */; };
+		1BD992B42574266100862032 /* VC_musicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD992B32574266100862032 /* VC_musicPlayer.swift */; };
 		1BE4F6A4254AA0F400AEE9EC /* UIColor_EXT copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE4F6A3254AA0F400AEE9EC /* UIColor_EXT copy.swift */; };
 		1BE4F6B6254ABC9300AEE9EC /* imageResize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE4F6B5254ABC9300AEE9EC /* imageResize.swift */; };
 		3888A0AB9932D463F3F1EDD7 /* Pods_MusicStreamingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FC2DD553BA412AF7D29518 /* Pods_MusicStreamingTests.framework */; };
@@ -55,6 +57,8 @@
 		1BA0B5B02547AC3B000DDBA6 /* MusicStreamingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicStreamingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA0B5B42547AC3B000DDBA6 /* MusicStreamingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicStreamingUITests.swift; sourceTree = "<group>"; };
 		1BA0B5B62547AC3B000DDBA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BD992AC257425A200862032 /* VC_songList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_songList.swift; sourceTree = "<group>"; };
+		1BD992B32574266100862032 /* VC_musicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_musicPlayer.swift; sourceTree = "<group>"; };
 		1BE4F6A3254AA0F400AEE9EC /* UIColor_EXT copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor_EXT copy.swift"; sourceTree = "<group>"; };
 		1BE4F6B5254ABC9300AEE9EC /* imageResize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageResize.swift; sourceTree = "<group>"; };
 		27BF3263C8660419C0263E0D /* Pods-MusicStreamingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicStreamingTests.debug.xcconfig"; path = "Target Support Files/Pods-MusicStreamingTests/Pods-MusicStreamingTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -121,12 +125,12 @@
 		1BA0B58E2547AC39000DDBA6 /* MusicStreaming */ = {
 			isa = PBXGroup;
 			children = (
-				1BA0B58F2547AC39000DDBA6 /* AppDelegate.swift */,
-				1B0EE5C62547BBDB00D7677F /* VC_LoginScreen.swift */,
-				1B0EE5CB2547BBF200D7677F /* VC_HomeScreen.swift */,
-				1BA0B59B2547AC3B000DDBA6 /* Assets.xcassets */,
-				1BA0B59D2547AC3B000DDBA6 /* LaunchScreen.storyboard */,
-				1BA0B5A02547AC3B000DDBA6 /* Info.plist */,
+				1BD87D092571A8A3006C85B1 /* VC_Home */,
+				1BD992B1257425AC00862032 /* VC_songPage */,
+				1BD992B22574261D00862032 /* VC_musicPlayer */,
+				1BD87D082571A891006C85B1 /* VC_Login */,
+				1BD992BB2574276400862032 /* Application */,
+				1BD992BF25742B1B00862032 /* Supporting_Files */,
 				1BA0B5982547AC39000DDBA6 /* MusicStreaming.xcdatamodeld */,
 			);
 			path = MusicStreaming;
@@ -148,6 +152,56 @@
 				1BA0B5B62547AC3B000DDBA6 /* Info.plist */,
 			);
 			path = MusicStreamingUITests;
+			sourceTree = "<group>";
+		};
+		1BD87D082571A891006C85B1 /* VC_Login */ = {
+			isa = PBXGroup;
+			children = (
+				1B0EE5C62547BBDB00D7677F /* VC_LoginScreen.swift */,
+			);
+			path = VC_Login;
+			sourceTree = "<group>";
+		};
+		1BD87D092571A8A3006C85B1 /* VC_Home */ = {
+			isa = PBXGroup;
+			children = (
+				1B0EE5CB2547BBF200D7677F /* VC_HomeScreen.swift */,
+			);
+			path = VC_Home;
+			sourceTree = "<group>";
+		};
+		1BD992B1257425AC00862032 /* VC_songPage */ = {
+			isa = PBXGroup;
+			children = (
+				1BD992AC257425A200862032 /* VC_songList.swift */,
+			);
+			path = VC_songPage;
+			sourceTree = "<group>";
+		};
+		1BD992B22574261D00862032 /* VC_musicPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				1BD992B32574266100862032 /* VC_musicPlayer.swift */,
+			);
+			path = VC_musicPlayer;
+			sourceTree = "<group>";
+		};
+		1BD992BB2574276400862032 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1BA0B58F2547AC39000DDBA6 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1BD992BF25742B1B00862032 /* Supporting_Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BA0B59B2547AC3B000DDBA6 /* Assets.xcassets */,
+				1BA0B59D2547AC3B000DDBA6 /* LaunchScreen.storyboard */,
+				1BA0B5A02547AC3B000DDBA6 /* Info.plist */,
+			);
+			path = Supporting_Files;
 			sourceTree = "<group>";
 		};
 		1BE4F6A8254AA0FF00AEE9EC /* Extensions */ = {
@@ -423,6 +477,8 @@
 				1BE4F6B6254ABC9300AEE9EC /* imageResize.swift in Sources */,
 				1BE4F6A4254AA0F400AEE9EC /* UIColor_EXT copy.swift in Sources */,
 				1BA0B59A2547AC39000DDBA6 /* MusicStreaming.xcdatamodeld in Sources */,
+				1BD992AD257425A200862032 /* VC_songList.swift in Sources */,
+				1BD992B42574266100862032 /* VC_musicPlayer.swift in Sources */,
 				1B0EE5C72547BBDB00D7677F /* VC_LoginScreen.swift in Sources */,
 				1B0EE5CC2547BBF200D7677F /* VC_HomeScreen.swift in Sources */,
 			);
@@ -595,7 +651,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CZSSRHPM2D;
-				INFOPLIST_FILE = MusicStreaming/Info.plist;
+				INFOPLIST_FILE = MusicStreaming/Supporting_Files/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -615,7 +671,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CZSSRHPM2D;
-				INFOPLIST_FILE = MusicStreaming/Info.plist;
+				INFOPLIST_FILE = MusicStreaming/Supporting_Files/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
