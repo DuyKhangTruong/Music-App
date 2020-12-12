@@ -11,6 +11,7 @@ target 'MusicStreaming' do
   pod 'MaterialComponents/TextControls+FilledTextFields'
   pod 'MaterialComponents/TextControls+OutlinedTextAreas'
   pod 'MaterialComponents/TextControls+OutlinedTextFields'
+  pod 'iCarousel'
 
   target 'MusicStreamingTests' do
     inherit! :search_paths
